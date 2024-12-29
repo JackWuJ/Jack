@@ -57,14 +57,14 @@
     //     // "showImg": url + "img/沙琪玛.png"
     // }
     const args = {
-        "姓名": "Font.",
-        "性别": "男",
-        "微信号": "Tangcity_8-18",
-        "个性签名": "平安喜樂.",
-        "地区": "广东 广州",
-        "头像图片": url+"img/Front..jpg",
+        "姓名": "摄影师-拾贰📷",
+        "性别": "女",
+        "微信号": "YZGQ-3",
+        "个性签名": "我不是很会说 所以我总是尽量做.",
+        "地区": "山东 潍坊",
+        "头像图片": url+"img/摄影师-拾贰.jpg",
         // "展示图片": "/img/sweet.png"
-        "展示图片": url+"img/钻戒.png"
+        "展示图片": url+"img/项链3.png"
         // https://github.com/JackWuJ/Jack_/blob/main/img/sweet.png?raw=true
     }
 
@@ -90,7 +90,147 @@
 </script>
 
 <style>
+    * {
+        user-select: none;
+    }
 
+
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        background-color: #dadada;
+        font-size: 17px;
+        overflow: hidden;
+    }
+
+    #Card {
+        background-color: white;
+        padding: 0 25px 0 25px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 16.79841897vh;
+    }
+
+    #Card .left,
+    #Card .right {
+        height: 50%;
+    }
+
+    #Card .left {
+        margin-left: 0.85638999vh;
+    }
+
+    #Card .left img {
+        
+        height: 66px;
+        width: 66px;
+        border-radius: 10px;
+    }
+
+    #Card .right {
+        font-weight: 600;
+        margin-left: 2.70092227vh;
+    }
+
+    #Card .right .top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 21px;
+    }
+
+    #Card .right .top img {
+        margin-left: 10px;
+        height: 1.97628458vh;
+        color: red;
+    }
+
+    #Card .right .foot p {
+        font-weight: 400;
+        margin-top: 10px;
+        color: #878787;
+        font-size: 14px;
+        line-height: 0.6rem;
+    }
+
+    .lineWarp {
+        width: 100%;
+        background-color: white;
+        padding-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lineWarp .line {
+        height: 1px;
+        background-color: #dadada;
+        width: 100%;
+    }
+
+    #beiZhuBiaoQian {
+        padding: 0 25px 0 20px;
+        background-color: white;
+        height: 7.24637681vh;
+        margin-bottom: 1.58102767vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #beiZhuBiaoQian .go_img {
+        height: 30px;
+    }
+
+    #geXingQianMing,
+    #laiYuan {
+        height: 7.90513834vh;
+        background-color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 25px 0 20px;
+    }
+
+    #geXingQianMing .gexingqianmingAndLaiyuan,
+    #laiYuan .gexingqianmingAndLaiyuan {
+        min-width: 70px;
+    }
+
+    #geXingQianMing .right,
+    #laiYuan .right {
+        margin-left: 10px;
+        color: #878787;
+        word-wrap: break-word;
+    }
+
+    #geXingQianMing {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #geXingQianMing img {
+        width: 20px;
+        /*       height: 20px;*/
+        z-index: 1000;
+    }
+
+    #tianJiaDaoTongXunLu {
+        margin-top: 1.58102767vh;
+        height: 7.18050066vh;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #5b6c96;
+        font-weight: 500;
+    }
 </style>
 
 <body>
@@ -138,7 +278,7 @@
         <div class="left gexingqianmingAndLaiyuan laiyuan_text">来源</div>
         <div class="right laizisaoyisao_text">来自扫一扫</div>
     </div>
-
+    
     <div id="tianJiaDaoTongXunLu">添加到通讯录</div>
 </div>
 </body>
